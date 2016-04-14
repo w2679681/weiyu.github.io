@@ -1,0 +1,138 @@
+/* CSS Document */
+body,ul,p{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#333;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+
+
+#box{
+	width:400px;
+	height:434px;
+	margin:200px auto;
+	background:#999;
+	position:relative;
+}
+
+.big_pic{
+	width:400px;
+	height:320px;
+	background:url(images/loading.gif) no-repear center;
+	overflow:hidden;
+	position:relative;
+}
+
+.big_pic ul{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.big_pic ul li{
+	position:absolute;
+	left:0;
+	top:0;	
+}
+.big_pic ul li img{
+	width:100%;
+	height:100%;
+}
+
+.big_pic .left, .big_pic .right{
+	display:inline-block;
+	width:200px;
+	height:320px;
+	opacity:0;
+	filter:alpha(opacity:0);
+	position:absolute;
+	top:0;
+	opacity:0;
+	filter:alpha(opacity:0);
+	z-index:2001;
+}
+.big_pic a.left{
+	left:0;
+}
+.big_pic a.right{
+	right:0;
+}
+
+.big_pic .pre, .big_pic .next{
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:50%;
+	margin-top:-30px;
+	opacity:0;
+	filter:alpha(opacity:0);
+	z-index:6001;
+}
+.big_pic .pre{
+	background:url(images/btn.gif) no-repeat;
+	left:0;
+}
+.big_pic .next{
+	background:url(images/btn.gif) no-repeat 0 -60px;
+	right:0;
+}
+
+.big_pic .bg{
+	width:96%;
+	height:24px;
+	padding:0 2%;
+	background:#000;
+	opacity:0.5;
+	font-size:14px;
+	line-height:24px;
+	color:#fff;
+	filter:alpha(opacity:50);
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:10;
+}
+.big_pic .bg .text{
+	float:left;
+}
+.big_pic .bg .num{
+	float:right;
+}
+
+
+.small_pic{
+	width:380px;
+	height:94px;
+	overflow:hidden;
+	position:absolute;
+	left:10px;
+	top:330px;
+}
+.small_pic ul{
+	height:94px;
+	position:absolute;s
+	top:0;
+	left:0;
+}
+.small_pic ul li{
+	width:120px;
+	height:94px;
+	padding-right:10px;
+	float:left;
+	opacity:0.3;
+	filter:alpha(opacity:30);
+}
+.small_pic ul li img{
+	width:100%;
+	height:100%;
+}
+
+
+
+
