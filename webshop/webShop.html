@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5,
+     maximum-scale=2.0, user-scalable=yes"/>
+    <meta charset="UTF-8">
+    <title>电商首页</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+<!--顶部区-->
+<header>
+    <div class="topBar">
+        <div class="centerBox">
+            <div class="leftArea fl">
+                <a href="#" class="collect"><b>收藏本站</b></a>
+            </div>
+            <div class="rightArea fr">
+                <span><b>欢迎来到XX商城！</b></span>
+                <a href="#">【登录】</a>
+                <a href="#">【免费注册】</a>
+            </div>
+        </div>
+    </div>
+    <div class="logoBar">
+        <div class="centerBox">
+            <div class="logo fl">
+                <a href="#"><img src="img/logo.jpg" alt="logo" width="112" height="60"></a>
+            </div>
+            <div class="searchBar fl" >
+                <input type="text" class="text" name="search">
+                <input type="button" value="搜 索" class="btn">
+            </div>
+            <div class="shopCar fr">
+                <span class="car fl">购物车</span>
+                <span class="num fr">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="centerBox">
+            <div class="shopClass">
+                <div class="shopClass_left fl">
+                    <h2>全部商品分类</h2>
+                    <div id="shopShow">
+                        <dl class="shopItem">
+                            <dt><a href="#"><b>手机</b></a>
+                                <a href="#"><b>数码</b></a>
+                                <a href="#"><b>合约机</b></a>
+                            </dt>
+                            <dd>
+                                <div>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>手机配件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">笔记本</a><a href="#">超极本</a><a href="#">上网本</a>
+                                            <a href="#">平板电脑</a><a href="#">台式机</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>装机配件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">CPU</a><a href="#">硬盘</a><a href="#">SSD固态硬盘</a>
+                                            <a href="#">内存</a><a href="#">显卡</a>
+                                            <a href="#">智能显示器</a><a href="#">主板</a><a href="#">机箱</a>
+                                            <a href="#">电源</a><a href="#">散热器</a>
+                                            <a href="#">刻录机/光驱</a><a href="#">声卡</a><a href="#">扩展卡</a>
+                                            <a href="#">服务器配件</a><a href="#">DIY小附件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>整机附件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">电脑包</a><a href="#">电脑桌</a><a href="#">电池</a>
+                                            <a href="#">电源适配器</a><a href="#">贴膜</a>
+                                            <a href="#">清洁用品</a><a href="#">笔记本散热器</a><a href="#">USB扩展</a><br/>
+                                            <a href="#">平板配件</a><a href="#">插座/网线</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑外设</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">鼠标</a><a href="#">键盘</a><a href="#">游戏外设</a>
+                                            <a href="#">移动硬盘</a><a href="#">摄像头</a>
+                                            <a href="#">高清播放器</a><a href="#">外置盒</a><a href="#">移动硬盘包</a><br/>
+                                            <a href="#">手写板/绘图板</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>网络设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">路由器</a><a href="#">网卡</a><a href="#">3G上网卡</a>
+                                            <a href="#">交换机</a><a href="#">网络储存</a>
+                                            <a href="#">布线工具</a><a href="#">网络配件</a><a href="#">正版软件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>音频设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">音响</a><a href="#">耳机/耳麦</a><a href="#">麦克风</a>
+                                            <a href="#">声卡</a><a href="#">音频附件</a>
+                                            <a href="#">录音笔</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#">荣耀3X</a>
+                                <a href="#">单反</a>
+                                <a href="#">智能设备</a>
+                            </dd>
+                        </dl>
+                        <dl class="shopItem">
+                            <dt><a href="#"><b>电脑</b></a>
+                                <a href="#"><b>硬件外设</b></a>
+                                <a href="#"><b>装机宝</b></a>
+                            </dt>
+                            <dd>
+                                <div>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑整机</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">笔记本</a><a href="#">超极本</a><a href="#">上网本</a>
+                                            <a href="#">平板电脑</a><a href="#">台式机</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>装机配件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">CPU</a><a href="#">硬盘</a><a href="#">SSD固态硬盘</a>
+                                            <a href="#">内存</a><a href="#">显卡</a>
+                                            <a href="#">智能显示器</a><a href="#">主板</a><a href="#">机箱</a>
+                                            <a href="#">电源</a><a href="#">散热器</a>
+                                            <a href="#">刻录机/光驱</a><a href="#">声卡</a><a href="#">扩展卡</a>
+                                            <a href="#">服务器配件</a><a href="#">DIY小附件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>整机附件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">电脑包</a><a href="#">电脑桌</a><a href="#">电池</a>
+                                            <a href="#">电源适配器</a><a href="#">贴膜</a>
+                                            <a href="#">清洁用品</a><a href="#">笔记本散热器</a><a href="#">USB扩展</a><br/>
+                                            <a href="#">平板配件</a><a href="#">插座/网线</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑外设</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">鼠标</a><a href="#">键盘</a><a href="#">游戏外设</a>
+                                            <a href="#">移动硬盘</a><a href="#">摄像头</a>
+                                            <a href="#">高清播放器</a><a href="#">外置盒</a><a href="#">移动硬盘包</a><br/>
+                                            <a href="#">手写板/绘图板</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>网络设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">路由器</a><a href="#">网卡</a><a href="#">3G上网卡</a>
+                                            <a href="#">交换机</a><a href="#">网络储存</a>
+                                            <a href="#">布线工具</a><a href="#">网络配件</a><a href="#">正版软件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>音频设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">音响</a><a href="#">耳机/耳麦</a><a href="#">麦克风</a>
+                                            <a href="#">声卡</a><a href="#">音频附件</a>
+                                            <a href="#">录音笔</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#">笔记本</a>
+                                <a href="#">台式机</a>
+                                <a href="#">超极本</a>
+                                <a href="#">平板</a>
+                            </dd>
+                        </dl>
+                        <dl class="shopItem">
+                            <dt><a href="#"><b>大家电</b></a>
+                            </dt>
+                            <dd>
+                                <div>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑整机</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">笔记本</a><a href="#">超极本</a><a href="#">上网本</a>
+                                            <a href="#">平板电脑</a><a href="#">台式机</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑整机</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">笔记本</a><a href="#">超极本</a><a href="#">上网本</a>
+                                            <a href="#">平板电脑</a><a href="#">台式机</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>装机配件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">CPU</a><a href="#">硬盘</a><a href="#">SSD固态硬盘</a>
+                                            <a href="#">内存</a><a href="#">显卡</a>
+                                            <a href="#">智能显示器</a><a href="#">主板</a><a href="#">机箱</a>
+                                            <a href="#">电源</a><a href="#">散热器</a>
+                                            <a href="#">刻录机/光驱</a><a href="#">声卡</a><a href="#">扩展卡</a>
+                                            <a href="#">服务器配件</a><a href="#">DIY小附件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>整机附件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">电脑包</a><a href="#">电脑桌</a><a href="#">电池</a>
+                                            <a href="#">电源适配器</a><a href="#">贴膜</a>
+                                            <a href="#">清洁用品</a><a href="#">笔记本散热器</a><a href="#">USB扩展</a><br/>
+                                            <a href="#">平板配件</a><a href="#">插座/网线</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑外设</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">鼠标</a><a href="#">键盘</a><a href="#">游戏外设</a>
+                                            <a href="#">移动硬盘</a><a href="#">摄像头</a>
+                                            <a href="#">高清播放器</a><a href="#">外置盒</a><a href="#">移动硬盘包</a><br/>
+                                            <a href="#">手写板/绘图板</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>网络设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">路由器</a><a href="#">网卡</a><a href="#">3G上网卡</a>
+                                            <a href="#">交换机</a><a href="#">网络储存</a>
+                                            <a href="#">布线工具</a><a href="#">网络配件</a><a href="#">正版软件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>音频设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">音响</a><a href="#">耳机/耳麦</a><a href="#">麦克风</a>
+                                            <a href="#">声卡</a><a href="#">音频附件</a>
+                                            <a href="#">录音笔</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#">电视</a>
+                                <a href="#">空调</a>
+                                <a href="#">冰箱</a>
+                                <a href="#">洗衣机</a>
+                            </dd>
+                        </dl>
+                        <dl class="shopItem">
+                            <dt><a href="#"><b>厨房电器</b></a>
+                                <a href="#"><b>生活电器</b></a>
+                            </dt>
+                            <dd>
+                                <div>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑整机</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">笔记本</a><a href="#">超极本</a><a href="#">上网本</a>
+                                            <a href="#">平板电脑</a><a href="#">台式机</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>装机配件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">CPU</a><a href="#">硬盘</a><a href="#">SSD固态硬盘</a>
+                                            <a href="#">内存</a><a href="#">显卡</a>
+                                            <a href="#">智能显示器</a><a href="#">主板</a><a href="#">机箱</a>
+                                            <a href="#">电源</a><a href="#">散热器</a>
+                                            <a href="#">刻录机/光驱</a><a href="#">声卡</a><a href="#">扩展卡</a>
+                                            <a href="#">服务器配件</a><a href="#">DIY小附件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>装机配件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">CPU</a><a href="#">硬盘</a><a href="#">SSD固态硬盘</a>
+                                            <a href="#">内存</a><a href="#">显卡</a>
+                                            <a href="#">智能显示器</a><a href="#">主板</a><a href="#">机箱</a>
+                                            <a href="#">电源</a><a href="#">散热器</a>
+                                            <a href="#">刻录机/光驱</a><a href="#">声卡</a><a href="#">扩展卡</a>
+                                            <a href="#">服务器配件</a><a href="#">DIY小附件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>整机附件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">电脑包</a><a href="#">电脑桌</a><a href="#">电池</a>
+                                            <a href="#">电源适配器</a><a href="#">贴膜</a>
+                                            <a href="#">清洁用品</a><a href="#">笔记本散热器</a><a href="#">USB扩展</a><br/>
+                                            <a href="#">平板配件</a><a href="#">插座/网线</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑外设</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">鼠标</a><a href="#">键盘</a><a href="#">游戏外设</a>
+                                            <a href="#">移动硬盘</a><a href="#">摄像头</a>
+                                            <a href="#">高清播放器</a><a href="#">外置盒</a><a href="#">移动硬盘包</a><br/>
+                                            <a href="#">手写板/绘图板</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>网络设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">路由器</a><a href="#">网卡</a><a href="#">3G上网卡</a>
+                                            <a href="#">交换机</a><a href="#">网络储存</a>
+                                            <a href="#">布线工具</a><a href="#">网络配件</a><a href="#">正版软件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>音频设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">音响</a><a href="#">耳机/耳麦</a><a href="#">麦克风</a>
+                                            <a href="#">声卡</a><a href="#">音频附件</a>
+                                            <a href="#">录音笔</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#">空气净化器</a>
+                                <a href="#">微波炉</a>
+                                <a href="#">取暖设备</a>
+                            </dd>
+                        </dl>
+                        <dl class="shopItem">
+                            <dt><a href="#"><b>食品/饮料/生鲜</b></a>
+                                <a href="#"><b>粮油</b></a>
+                            </dt>
+                            <dd>
+                                <div>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑整机</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">笔记本</a><a href="#">超极本</a><a href="#">上网本</a>
+                                            <a href="#">平板电脑</a><a href="#">台式机</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>装机配件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">CPU</a><a href="#">硬盘</a><a href="#">SSD固态硬盘</a>
+                                            <a href="#">内存</a><a href="#">显卡</a>
+                                            <a href="#">智能显示器</a><a href="#">主板</a><a href="#">机箱</a>
+                                            <a href="#">电源</a><a href="#">散热器</a>
+                                            <a href="#">刻录机/光驱</a><a href="#">声卡</a><a href="#">扩展卡</a>
+                                            <a href="#">服务器配件</a><a href="#">DIY小附件</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>整机附件</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">电脑包</a><a href="#">电脑桌</a><a href="#">电池</a>
+                                            <a href="#">电源适配器</a><a href="#">贴膜</a>
+                                            <a href="#">清洁用品</a><a href="#">笔记本散热器</a><a href="#">USB扩展</a><br/>
+                                            <a href="#">平板配件</a><a href="#">插座/网线</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>电脑外设</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">鼠标</a><a href="#">键盘</a><a href="#">游戏外设</a>
+                                            <a href="#">移动硬盘</a><a href="#">摄像头</a>
+                                            <a href="#">高清播放器</a><a href="#">外置盒</a><a href="#">移动硬盘包</a><br/>
+                                            <a href="#">手写板/绘图板</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="service clearFix">
+                                        <li class="service_title fl"><a href="#"><b>网络设备</b></a></li>
+                                        <li class="service_item fl">
+                                            <a href="#">路由器</a><a href="#">网卡</a><a href="#">3G上网卡</a>
+                                            <a href="#">交换机</a><a href="#">网络储存</a>
+                                            <a href="#">布线工具</a><a href="#">网络配件</a><a href="#">正版软件</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#">进口</a>
+                                <a href="#">方便面</a>
+                                <a href="#">零食</a>
+                                <a href="#">保健</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="shopClass_right fl">
+                    <ul>
+                        <li><a href="#">数码城</a></li>
+                        <li><a href="#">天黑黑</a></li>
+                        <li><a href="#">团购</a></li>
+                        <li><a href="#">发现</a></li>
+                        <li><a href="#">二手特卖</a></li>
+                        <li><a href="#">名品会</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--焦点图区-->
+<div class="focusMap centerBox clearFix">
+    <div class="banner fr">
+        <ul id="adBox" class="adBox">
+            <li><img src="img/ad1.jpg" alt="banner"></li>
+            <li><img src="img/ad2.jpg" alt="banner"></li>
+            <li><img src="img/ad3.jpg" alt="banner"></li>
+        </ul>
+        <i id="prev">&lt;</i>
+        <i id="next">&gt;</i>
+    </div>
+</div>
+<!--商品展示区-->
+<div class="centerBox commodityTitle clearFix">
+    <a href="#" class="commodityIcon fl"></a>
+    <h2>家用电脑</h2>
+    <a href="#" class="fr">更多&gt&gt</a>
+</div>
+<!--商品展示区左侧-->
+<div class="commodityShow centerBox clearFix">
+    <div class="commodityShow_left fl">
+        <img src="img/ad4.jpg" alt="sm_banner">
+    </div>
+    <!--商品展示区右侧上区-->
+    <div class="commodityShow_right fr ">
+        <ul class="commodityItem_top">
+            <li>
+                <a href="#"><img src="img/ad5.jpg"></a>
+                <h2>HTC新渴望8系列</h2>
+                <p>¥1899元</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad5.jpg"></a>
+                <h2>HTC新渴望8系列</h2>
+                <p>¥1899元</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad5.jpg"></a>
+                <h2>HTC新渴望8系列</h2>
+                <p>¥1899元</p>
+            </li>
+            <li class="clearBorder">
+                <a href="#"><img src="img/ad5.jpg"></a>
+                <h2>HTC新渴望8系列</h2>
+                <p>¥1899元</p>
+            </li>
+        </ul>
+        <!--商品展示区右侧下区-->
+        <ul class="commodityItem_bottom">
+            <li>
+                <a href="#"><img src="img/ad6.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>NFC技术一碰轻松配对！接触屏幕</span>
+                    <b>¥149.00元</b>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad7.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>Samsung三星GALAXY&nbsp;Grand2</span>
+                    <b>¥2000.00元</b>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad8.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>全网低价 Apple苹果iPad&nbsp;mini1</span>
+                    <b>¥1888.00元</b>
+                </div>
+            </li>
+            <li class="clearBorder">
+                <a href="#"><img src="img/ad9.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>Apple苹果&nbsp;全新Retina屏MacBoo</span>
+                    <b>¥20020.00元</b>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--食品区展示区-->
+<div class="centerBox commodityTitle ">
+    <a href="#" class="commodityIcon fl"></a>
+    <h2>食品酒水</h2>
+    <a href="#" class="fr">更多&gt&gt</a>
+</div>
+<div class="commodityShow centerBox clearFix">
+    <div class="commodityShow_left fl">
+        <img src="img/ad10.jpg" alt="sm_banner">
+    </div>
+    <!--商品展示区右侧上区-->
+    <div class="commodityShow_right fr ">
+        <ul class="commodityItem_top">
+            <li>
+                <a href="#"><img src="img/ad11.jpg"></a>
+                <h2>三月美食狂享购</h2>
+                <p>¥20元</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad11.jpg"></a>
+                <h2>三月美食狂享购</h2>
+                <p>¥30元</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad11.jpg"></a>
+                <h2>三月美食狂享购</h2>
+                <p>¥40元</p>
+            </li>
+            <li class="clearBorder">
+                <a href="#"><img src="img/ad11.jpg"></a>
+                <h2>三月美食狂享购</h2>
+                <p>¥50元</p>
+            </li>
+        </ul>
+        <!--商品展示区右侧下区-->
+        <ul class="commodityItem_bottom">
+            <li>
+                <a href="#"><img src="img/ad12.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>康比特&nbsp;维他保咀嚼片&nbsp;60片</span>
+                    <b>¥600.00元</b>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad12.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>康比特&nbsp;维他保咀嚼片&nbsp;40片</span>
+                    <b>¥400.00元</b>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="img/ad12.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>康比特&nbsp;维他保咀嚼片&nbsp;20片</span>
+                    <b>¥200.00元</b>
+                </div>
+            </li>
+            <li class="clearBorder">
+                <a href="#"><img src="img/ad12.jpg" width=""></a>
+                <div class="commodityText">
+                    <span>康比特&nbsp;维他保咀嚼片&nbsp;10片</span>
+                    <b>¥100.00元</b>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--商城底部-->
+<footer>
+    <p> <a href="#">商城简介</a><i>|</i>
+        <a href="#">商城公告</a><i>|</i>
+        <a href="#">招贤纳士</a><i>|</i>
+        <a href="#">联系我们</a><i>|</i>
+        <span>客服热线：400-675-1234</span>
+    </p>
+    <p>Copyright&nbsp;&copy;&nbsp;2006&nbsp;-&nbsp;2014&nbsp;版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号
+        &nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+    <p class="footImg"><img src="img/foot.jpg"><img src="img/foot.jpg"><img src="img/foot.jpg"><img src="img/foot.jpg"></p>
+</footer>
+<script>
+    var oBox=$("#adBox");
+    var arrImg=$("#adBox li");
+    var oShow=$("#shopShow");
+    var aDl=$("#shopShow dl");
+    var imgWidth=811;
+    for (var i=0;i<aDl.length;i++){
+        aDl[i].onmouseover=function(){
+
+            this.getElementsByTagName("div")[0].style.display="block"
+        };
+        aDl[i].onmouseout=function(){
+            this.getElementsByTagName("div")[0].style.display="none"
+        }
+    }
+    oBox.css("width",arrImg.length*811);
+    function prev(){
+        var temp=oBox.children(":last").clone();
+        oBox.children(":last").remove();
+        temp.css("marginLeft",-811);
+        oBox.prepend(temp);
+        oBox.children(":first").animate({marginLeft:0},2000);
+    }
+    $("#next").click(next);
+    $("#prev").click(prev);
+    function next(){
+        oBox.children(":first").animate({marginLeft:-811},2000,function(){
+            var temp = $(this).clone();
+            $(this).remove();
+            temp.css("marginLeft",0);
+            oBox.append(temp)
+        } );}
+    /*
+    function next(){
+        if (iNow==arrImg.length-1){
+            oBox.children(":first").css("position","relative");
+            oBox.children(":first").css("left",arrImg.length*imgWidth);
+            iNow=0
+        }else {
+            iNow++
+        }
+        iNow2++;
+
+        for(var i=0;i<arrBtn.length;i++){
+            arrBtn[i].className = '';
+        }
+
+        arrBtn[iNow].className = 'active';
+
+        oBox.animate({"left":-iNow2*imgWidth},2000,function (){
+            if(iNow==0){
+                oBox.children(":first").css("position","static");
+                oBox.css("left",0);
+                iNow2 = 0;
+        }
+    })
+    }*/
+    var starMove=setInterval(next,3000);
+    $(".banner").hover(function(){
+        clearInterval(starMove);
+        $("#next").fadeIn();
+        $("#prev").fadeIn()
+    },function(){
+        starMove=setInterval(next,3000);
+        $("#next").fadeOut();
+        $("#prev").fadeOut()
+    })
+
+</script>
+</body>
+</html>
